@@ -12,6 +12,6 @@ class Game extends Model
 
     public function session(): BelongsTo
     {
-        return $this->belongsTo(Session::class);
+        return $this->belongsTo(Appointment::class);
     }
 }
