@@ -20,7 +20,6 @@ class GameSeeder extends Seeder
 
         // Game::factory(100)->create();
 
-        // Define the list of 10 famous esports games
         $games = [
             'League of Legends',
             'Counter-Strike: Global Offensive',
@@ -32,6 +31,10 @@ class GameSeeder extends Seeder
             'Call of Duty: Warzone',
             'Valorant',
             'Apex Legends',
+            'Hearthstone',
+            'World of Tanks',
+            'Magic:The gathering Arena',
+            'Starcraft II',
         ];
 
         // Seed the games into the database

@@ -21,6 +21,14 @@ return new class extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
+
+            $table->foreignId('role_id')->nullable();
+
+            // coach stuff
+            $table->text('bio')->nullable();
+            // todo avatar
+            // todo language
+            // $table->string('language')->nullable();
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

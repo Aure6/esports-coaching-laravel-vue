@@ -10,7 +10,7 @@ class Game extends Model
 {
     use HasFactory;
 
-    public function session(): BelongsTo
+    public function appointment(): BelongsTo
     {
         return $this->belongsTo(Appointment::class);
     }

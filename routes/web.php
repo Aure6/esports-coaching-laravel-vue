@@ -14,7 +14,8 @@ Route::get('/', function () {
     ]);
 })->name('/');
 
-Route::resource('games', GameController::class)->only(['index']);
+Route::get('/games', [GameController::class, 'index'])->name('games.index');
+Route::get('/games/show/{gameId}', [GameController::class, 'show'])->name('games.show');
 
 Route::middleware([
     'auth:sanctum',
